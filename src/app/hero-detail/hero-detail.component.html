@@ -1,0 +1,23 @@
+<div *ngIf="hero">
+  <h2>{{hero.name | uppercase}} DETALLES</h2>
+  <div><span>id: </span>{{hero.id}}</div>
+  
+  <div>
+    <label>
+      <!--AQUI SE ADICIONA LA IMAGEN AL DETAILS POR RUTA Y POR NOMBRE IGUAL AL DEL ARRAY-->
+      <img class="hero-image" [src]="'assets/images/' + hero.name.toLowerCase().replace(' ', '_') + '.jpg'" alt="Hero Image">
+      <label >NOMINADO A ANIME DE LA TEMPORADA</label>
+      <input [(ngModel)]="hero.name" placeholder="name"/>
+    </label>
+  </div>
+  <button (click)="goBack()">ATRAS</button>
+</div>
+<div>
+  <!-- Botón de votar -->
+  <button (click)="vote()">Votar</button>
+
+  <!-- Contador de votos -->
+  <div>Votos: {{voteCount}}</div>
+
+  <button (click)="goBack()">ATRAS</button>
+</div>

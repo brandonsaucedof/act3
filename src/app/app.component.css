@@ -1,0 +1,19 @@
+hr {
+  border-top: 2px solid #ccc;
+  margin: 30px;
+  background-color: #ffb820; /* Cambia el color de fondo a naranja */
+}
+
+a {
+  background: #eeeeee;
+  color: #ffb820;
+  text-decoration: none;
+  margin: 10px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+a:hover,
+a.selected {
+  color: #ffb820;
+}
